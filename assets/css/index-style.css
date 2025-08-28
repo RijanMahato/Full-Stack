@@ -87,7 +87,7 @@ section{
 }
 
 .home-img img{
-    width: 400px;
+    width: 25vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
 }
@@ -96,25 +96,48 @@ section{
     margin-left: 5rem;
 }
 
-.home-content h1{
-    font-size: 3.7rem;
+.home-content h3{
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
 }
 
 span{
     color: var(--main-color);
 }
 
-.home-content h3 .span{
-    font-size: 2rem;
+.home-content h1{
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--main-color);
+    line-height: 1.3;
 }
 
 .home-content p{
-    font-size: 1rem;
+    font-size: 1.3rem;
+}
+
+.social-media a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover{
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
 }
 
 .btn{
@@ -130,6 +153,41 @@ span{
     transform: scale(1.1);
     transition: 0.3s ease;
     box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+/* Full-Stack Section */
+.fullstack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+
+.fullstack-img img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.fullstack-content{
+    padding: 0 4rem;
+}
+
+.fullstack-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.fullstack-content h3{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
 
 /* Components Section */
@@ -193,8 +251,34 @@ span{
     background-color: var(--snd-bg-color);
 }
 
+.footer .content{
+    text-align: center;
+    justify-content: center;
+}
+
+.footer h3{
+    font: 2rem;
+    font-weight: 700;
+}
+
+.footer .content a{
+    display: inline-block;
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 1rem;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.footer .content a:hover{
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
 .footer .social{
     text-align: center;
+    padding-top: 25px;
     padding-bottom: 25px;
     color: var(--main-color);
 }

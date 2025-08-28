@@ -8,8 +8,8 @@ window.addEventListener("scroll", function() {
   }
 });
 
-const typed = new Typed('.typing-anim', {
-  strings: ['Development','Developer'],
+const typed1 = new Typed('.typing-anim1', {
+  strings: ['Fullstack Developer','Student'],
   typeSpeed: 80,
   backSpeed: 80,
   backDelay: 1200,
