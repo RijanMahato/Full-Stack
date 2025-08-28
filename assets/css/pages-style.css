@@ -144,8 +144,36 @@ section {
     background-color: var(--snd-bg-color);
 }
 
+.footer .content{
+    text-align: center;
+    justify-content: center;
+}
+
+.footer h3{
+    font: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.footer .content a{
+    display: inline-block;
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 1rem;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.footer .content a:hover{
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
 .footer .social{
     text-align: center;
+    padding-top: 25px;
     padding-bottom: 25px;
     color: var(--main-color);
 }
@@ -177,7 +205,6 @@ section {
     font-size: 16px;
     color: var(--text-color);
 }
-
 
 /* Responsive UI code */
 @media (max-width: 1200px) {

@@ -259,6 +259,8 @@ span{
 .footer h3{
     font: 2rem;
     font-weight: 700;
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
 .footer .content a{
