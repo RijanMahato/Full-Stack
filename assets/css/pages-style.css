@@ -86,28 +86,52 @@ section {
 }
 
 /* Main Section */
-.container{
-    border: var(--main-color) solid;
-    border-radius: 10px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    background-color: var(--snd-bg-color);
-    height: 500px;
-    box-shadow: 0 0 25px var(--main-color);
+.components{
+    margin-bottom: 5rem;
 }
 
-.container h3{
-    text-align: center;
-    padding: 2rem;
+.components h3{
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text-color);
+    text-align: center;
 }
 
-.container p{
-    font-size: 1.2rem;
-    padding: 0 1rem;
+.components h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.components-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.components-container .components-box{
+    flex: 1 1 30rem;
+    background-color: var(--snd-bg-color);
+    padding: 6rem 1rem 6rem;
+    border-radius: 20px;
+    text-align: left;
+    border: 0.2rem solid var(--main-color);
+    transition: 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.components .box{
+    background-color: var(--snd-bg-color);
+    border: var(--main-color) solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box i{
+    font-size: 2rem;
 }
 
 /* Footer Section */

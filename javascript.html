@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>HTML</title>
+    <title>JavaScript</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -49,11 +49,54 @@
         </nav>
     </header>
     <!-- Main Section -->
-    <Section class="Main">
-        <div class="container">
-            <h3>JavaScript</h3>
-            <p>JavaScript is a programming language that adds interactivity and dynamic behavior to websites. While HTML provides the structure and CSS handles the styling, JavaScript makes web pages come alive, things like buttons that respond when clicked, forms that validate input, sliders, animations, and real-time updates. It runs directly in the browser, allowing developers to create engaging experiences for users. <br><br>
-            Beyond basic interactivity, JavaScript can also handle more complex tasks like fetching data from servers, manipulating page content on the fly, and even building full applications with frameworks like React, Angular, or Vue.js. It is an essential part of modern web development, giving developers the tools to create websites that are not only visually appealing but also responsive and interactive.</p>
+    <Section class="components">
+        <div class="components-container">
+            <div class="box">
+                <h3><i class='bx bxl-javascript' style='color:orange'></i>JavaScript</h3>
+                <p>JavaScript is a programming language that adds interactivity and dynamic behavior to websites. While HTML provides the structure and CSS handles the styling, JavaScript makes web pages come alive, things like buttons that respond when clicked, forms that validate input, sliders, animations, and real-time updates. It runs directly in the browser, allowing developers to create engaging experiences for users.</p>
+            </div>
+        
+            <div class="components-box">
+                <h4><i class='bx bx-code' style='color:black'></i>Example Code</h4>
+                <p>Here is a simple JavaScript code:</p>
+                <div class="p-3 border rounded bg-white">
+                    <pre>
+&lt;script&gt;
+const button = document.getElementById("button");
+const message = document.getElementById("message");
+
+button.addEventListener("click", function(){
+    const colors = ["red", "blue", "green", "orange", "yellow", "purple", "pink"];
+    button.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+    message.textContent = "Button Color Changed!!";
+});
+&lt;/script&gt;
+                    </pre>
+                </div>
+            </div>
+            <div class="components-box">
+                <h4><i class='bx bx-code-alt' style='color:black'></i>Output</h4>
+                <p>Here is what the code looks like when rendered:</p>
+                <div class="p-3 border rounded bg-white">
+                    <button class="btn btn-primary" id="button">Click Me!</button>
+                    <span id="message"></span>
+                    <script>
+                        const button = document.getElementById("button");
+                        const message = document.getElementById("message");
+                        
+                        button.addEventListener("click", function(){
+                            const colors = ["red", "blue", "green", "orange", "yellow", "purple", "pink"];
+                            button.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+
+                            message.textContent = "Button Color Changed!!";
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h4><i class='bx bxs-bulb' style='color:orange'></i>Conclusion</h4>
+            <p>Beyond basic interactivity, JavaScript can also handle more complex tasks like fetching data from servers, manipulating page content on the fly, and even building full applications with frameworks like React, Angular, or Vue.js. It is an essential part of modern web development, giving developers the tools to create websites that are not only visually appealing but also responsive and interactive.</p>
         </div>
     </Section>
     <!-- Footer Section -->
